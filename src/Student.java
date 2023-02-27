@@ -18,6 +18,6 @@ public class Student {
 
     public void podajROK()
     {
-        System.out.println("Studjuje na "+ rokStudiow + "Roku studiow");
+        System.out.println("Studjuje na "+ rokStudiow + " Roku studiow");
     }
 }
