@@ -5,6 +5,7 @@ public class Student {
     public String email;
     public int numerIndeksu;
     public int rokStudiow;
+    public static String nazwaUczelni = "WSB-NLU";
 
     public void kimJESTES()
     {

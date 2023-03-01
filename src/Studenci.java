@@ -2,12 +2,15 @@ public class Studenci {
 
     public static void main(String[] args) {
 
+        String uczelnia = Student.nazwaUczelni;
+
         Student Bartosz = new Student();
         Bartosz.email = "bartoszar@wp.pl";
         Bartosz.imie = "Bartosz";
         Bartosz.nazwisko = "Adamus";
         Bartosz.numerIndeksu = 127;
         Bartosz.rokStudiow = 1;
+        String uczelniaBartosza = Bartosz.nazwaUczelni;
 
         Student Barbara = new Student();
         Barbara.rokStudiow = 1;
