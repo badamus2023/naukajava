@@ -1,22 +1,34 @@
-import java.util.Scanner;
-public class Kalkulator {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Prosze, podaj pierwsza liczbe:");
-        float firstNumber = scanner.nextInt();
-        System.out.println("Prosze, podaj druga liczbe:");
-        float secondNumber = scanner.nextInt();
+public class Kalkulator
+{
+    public int dodawanie (int firstNumber, int secondNumber)
+        {
+            return firstNumber+secondNumber;
+        }
 
-        float dodawanie = firstNumber + secondNumber;
-        float odejmowanie = firstNumber - secondNumber;
-        float mnozenie = firstNumber * secondNumber;
-        float dzielenie = firstNumber / secondNumber;
-        float modulo = firstNumber % secondNumber;
+    public int odejmowanie (int firstNumber, int secondNumber)
+        {
+            return firstNumber-secondNumber;
+        }
 
-        System.out.println("Dodawanie: "+ dodawanie);
-        System.out.println("odejmowanie: "+ odejmowanie);
-        System.out.println("mnozenie: " + mnozenie);
-        System.out.println("dzielenie: "+ dzielenie);
-        System.out.println("modulo: "+ modulo);
+    public int mnozenie (int firstNumber, int secondNumber)
+        {
+            return firstNumber*secondNumber;
+        }
+
+    public int dzielenie (int firstNumber, int secondNumber)
+    {
+        if(secondNumber == 0)
+        {
+            System.out.println("Nie dzielimy przez 0");
+            return 0;
+        }
+        else
+        {
+            return firstNumber / secondNumber;
+        }
     }
+    public int modulo (int firstNumber, int secondNumber)
+        {
+            return firstNumber%secondNumber;
+        }
 }
